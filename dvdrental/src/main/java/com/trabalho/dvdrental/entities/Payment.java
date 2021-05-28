@@ -38,5 +38,55 @@ public class Payment {
 	
 	@Column (name="payment_date")
 	private Calendar paymentDate;
+
+	public Integer getPaymentID() {
+		return paymentID;
+	}
+
+	public void setPaymentID(Integer paymentID) {
+		this.paymentID = paymentID;
+	}
+
+	public Customer getCustomer() {
+		return customer;
+	}
+
+	public void setCustomer(Customer customer) {
+		this.customer = customer;
+	}
+
+	public Staff getStaff() {
+		return staff;
+	}
+
+	public void setStaff(Staff staff) {
+		this.staff = staff;
+	}
+
+	public Rental getRental() {
+		return rental;
+	}
+
+	public void setRental(Rental rental) {
+		this.rental = rental;
+	}
+
+	public BigDecimal getPaymentAmount() {
+		return paymentAmount;
+	}
+
+	public void setPaymentAmount(BigDecimal paymentAmount) {
+		this.paymentAmount = paymentAmount;
+	}
+
+	public Calendar getPaymentDate() {
+		return paymentDate;
+	}
+
+	public void setPaymentDate(Calendar paymentDate) {
+		this.paymentDate = paymentDate;
+	}
+	
+	
 	
 }

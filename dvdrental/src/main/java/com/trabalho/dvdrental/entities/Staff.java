@@ -59,4 +59,110 @@ public class Staff {
 	
 	@OneToMany(mappedBy="staff")
 	private List<Rental> listRental;
+
+	public Integer getStaffID() {
+		return staffID;
+	}
+
+	public void setStaffID(Integer staffID) {
+		this.staffID = staffID;
+	}
+
+	public String getStaffFirstName() {
+		return staffFirstName;
+	}
+
+	public void setStaffFirstName(String staffFirstName) {
+		this.staffFirstName = staffFirstName;
+	}
+
+	public String getStaffLastName() {
+		return staffLastName;
+	}
+
+	public void setStaffLastName(String staffLastName) {
+		this.staffLastName = staffLastName;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public String getStaffEmail() {
+		return staffEmail;
+	}
+
+	public void setStaffEmail(String staffEmail) {
+		this.staffEmail = staffEmail;
+	}
+
+	public Store getStore() {
+		return store;
+	}
+
+	public void setStore(Store store) {
+		this.store = store;
+	}
+
+	public boolean isStaffActive() {
+		return staffActive;
+	}
+
+	public void setStaffActive(boolean staffActive) {
+		this.staffActive = staffActive;
+	}
+
+	public String getStaffUsername() {
+		return staffUsername;
+	}
+
+	public void setStaffUsername(String staffUsername) {
+		this.staffUsername = staffUsername;
+	}
+
+	public String getStaffPassword() {
+		return staffPassword;
+	}
+
+	public void setStaffPassword(String staffPassword) {
+		this.staffPassword = staffPassword;
+	}
+
+	public Calendar getStaffLastUpdate() {
+		return staffLastUpdate;
+	}
+
+	public void setStaffLastUpdate(Calendar staffLastUpdate) {
+		this.staffLastUpdate = staffLastUpdate;
+	}
+
+	public byte getStaffPicture() {
+		return staffPicture;
+	}
+
+	public void setStaffPicture(byte staffPicture) {
+		this.staffPicture = staffPicture;
+	}
+
+	public List<Payment> getListPayment() {
+		return listPayment;
+	}
+
+	public void setListPayment(List<Payment> listPayment) {
+		this.listPayment = listPayment;
+	}
+
+	public List<Rental> getListRental() {
+		return listRental;
+	}
+
+	public void setListRental(List<Rental> listRental) {
+		this.listRental = listRental;
+	}
+	
+	
 }

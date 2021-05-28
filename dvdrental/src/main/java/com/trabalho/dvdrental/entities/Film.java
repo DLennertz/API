@@ -9,8 +9,6 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
-import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
@@ -61,23 +59,136 @@ public class Film {
 	@Column (name="fulltext")
 	private String filmFulltext;
 	
-	@ManyToMany
-	@JoinTable(
-	  name = "film_actor",
-	  joinColumns = @JoinColumn(name = "film_id", referencedColumnName = "film_id"),
-	  inverseJoinColumns = @JoinColumn(name = "actor_id", referencedColumnName = "actor_id")
-	)
-	private List<Actor> listActor;
-	
-	@ManyToMany
-	@JoinTable(
-	  name = "film_category",
-	  joinColumns = @JoinColumn(name = "film_id", referencedColumnName = "film_id"),
-	  inverseJoinColumns = @JoinColumn(name = "category_id", referencedColumnName = "category_id")
-	)
-	private List<Category> listCategory;
-	
 	@OneToMany(mappedBy="film")
 	private List<Inventory> listInventory;
+
+	public Integer getFilmID() {
+		return filmID;
+	}
+
+	public void setFilmID(Integer filmID) {
+		this.filmID = filmID;
+	}
+
+	public String getFilmTitle() {
+		return filmTitle;
+	}
+
+	public void setFilmTitle(String filmTitle) {
+		this.filmTitle = filmTitle;
+	}
+
+	public String getFilmDescription() {
+		return filmDescription;
+	}
+
+	public void setFilmDescription(String filmDescription) {
+		this.filmDescription = filmDescription;
+	}
+
+	public Calendar getFilmReleaseYear() {
+		return filmReleaseYear;
+	}
+
+	public void setFilmReleaseYear(Calendar filmReleaseYear) {
+		this.filmReleaseYear = filmReleaseYear;
+	}
+
+	public Language getLanguage() {
+		return language;
+	}
+
+	public void setLanguage(Language language) {
+		this.language = language;
+	}
+
+	public Integer getFilmRentalDuration() {
+		return filmRentalDuration;
+	}
+
+	public void setFilmRentalDuration(Integer filmRentalDuration) {
+		this.filmRentalDuration = filmRentalDuration;
+	}
+
+	public float getFilmRentalRate() {
+		return filmRentalRate;
+	}
+
+	public void setFilmRentalRate(float filmRentalRate) {
+		this.filmRentalRate = filmRentalRate;
+	}
+
+	public Integer getFilmLength() {
+		return filmLength;
+	}
+
+	public void setFilmLength(Integer filmLength) {
+		this.filmLength = filmLength;
+	}
+
+	public float getFilmReplacementCost() {
+		return filmReplacementCost;
+	}
+
+	public void setFilmReplacementCost(float filmReplacementCost) {
+		this.filmReplacementCost = filmReplacementCost;
+	}
+
+	public String getFilmRating() {
+		return filmRating;
+	}
+
+	public void setFilmRating(String filmRating) {
+		this.filmRating = filmRating;
+	}
+
+	public Calendar getFilmLastUpdate() {
+		return filmLastUpdate;
+	}
+
+	public void setFilmLastUpdate(Calendar filmLastUpdate) {
+		this.filmLastUpdate = filmLastUpdate;
+	}
+
+	public String getFilmSpecialFeatures() {
+		return filmSpecialFeatures;
+	}
+
+	public void setFilmSpecialFeatures(String filmSpecialFeatures) {
+		this.filmSpecialFeatures = filmSpecialFeatures;
+	}
+
+	public String getFilmFulltext() {
+		return filmFulltext;
+	}
+
+	public void setFilmFulltext(String filmFulltext) {
+		this.filmFulltext = filmFulltext;
+	}
+
+	public List<Inventory> getListInventory() {
+		return listInventory;
+	}
+
+	public void setListInventory(List<Inventory> listInventory) {
+		this.listInventory = listInventory;
+	}
+	
+//	@ManyToMany
+//	@JoinTable(
+//	  name = "film_actor",
+//	  joinColumns = @JoinColumn(name = "film_id", referencedColumnName = "film_id"),
+//	  inverseJoinColumns = @JoinColumn(name = "actor_id", referencedColumnName = "actor_id")
+//	)
+//	private List<Actor> listActor;
+//	
+//	@ManyToMany
+//	@JoinTable(
+//	  name = "film_category",
+//	  joinColumns = @JoinColumn(name = "film_id", referencedColumnName = "film_id"),
+//	  inverseJoinColumns = @JoinColumn(name = "category_id", referencedColumnName = "category_id")
+//	)
+//	private List<Category> listCategory;
+	
 	
 }

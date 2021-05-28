@@ -33,4 +33,46 @@ public class Inventory {
 	
 	@OneToOne (mappedBy="inventory")
 	private Rental rental;
+
+	public Integer getInventoryID() {
+		return inventoryID;
+	}
+
+	public void setInventoryID(Integer inventoryID) {
+		this.inventoryID = inventoryID;
+	}
+
+	public Film getFilm() {
+		return film;
+	}
+
+	public void setFilm(Film film) {
+		this.film = film;
+	}
+
+	public Integer getInventoryStoreID() {
+		return inventoryStoreID;
+	}
+
+	public void setInventoryStoreID(Integer inventoryStoreID) {
+		this.inventoryStoreID = inventoryStoreID;
+	}
+
+	public Calendar getInventoryLastUpdate() {
+		return inventoryLastUpdate;
+	}
+
+	public void setInventoryLastUpdate(Calendar inventoryLastUpdate) {
+		this.inventoryLastUpdate = inventoryLastUpdate;
+	}
+
+	public Rental getRental() {
+		return rental;
+	}
+
+	public void setRental(Rental rental) {
+		this.rental = rental;
+	}
+	
+	
 }

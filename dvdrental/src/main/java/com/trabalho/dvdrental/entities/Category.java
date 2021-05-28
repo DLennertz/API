@@ -36,4 +36,38 @@ public class Category {
 	)
 	private List<Film> listFilm;
 
+	public Integer getCategoryID() {
+		return categoryID;
+	}
+
+	public void setCategoryID(Integer categoryID) {
+		this.categoryID = categoryID;
+	}
+
+	public String getCategoryName() {
+		return categoryName;
+	}
+
+	public void setCategoryName(String categoryName) {
+		this.categoryName = categoryName;
+	}
+
+	public Calendar getCaegoryLastUpdate() {
+		return caegoryLastUpdate;
+	}
+
+	public void setCaegoryLastUpdate(Calendar caegoryLastUpdate) {
+		this.caegoryLastUpdate = caegoryLastUpdate;
+	}
+
+	public List<Film> getListFilm() {
+		return listFilm;
+	}
+
+	public void setListFilm(List<Film> listFilm) {
+		this.listFilm = listFilm;
+	}
+	
+	
+
 }

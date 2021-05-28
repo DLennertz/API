@@ -34,4 +34,46 @@ public class City {
 	
 	@Column (name="last_update")
 	private Calendar cityLastUpdate;
+
+	public Integer getCityId() {
+		return cityId;
+	}
+
+	public void setCityId(Integer cityId) {
+		this.cityId = cityId;
+	}
+
+	public String getCityName() {
+		return cityName;
+	}
+
+	public void setCityName(String cityName) {
+		this.cityName = cityName;
+	}
+
+	public Country getCountry() {
+		return country;
+	}
+
+	public void setCountry(Country country) {
+		this.country = country;
+	}
+
+	public List<Address> getListAddress() {
+		return listAddress;
+	}
+
+	public void setListAddress(List<Address> listAddress) {
+		this.listAddress = listAddress;
+	}
+
+	public Calendar getCityLastUpdate() {
+		return cityLastUpdate;
+	}
+
+	public void setCityLastUpdate(Calendar cityLastUpdate) {
+		this.cityLastUpdate = cityLastUpdate;
+	}
+	
+	
 }

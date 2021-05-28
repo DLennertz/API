@@ -28,4 +28,38 @@ public class Country {
 	
 	@OneToMany (mappedBy="country")
 	private List<City> listCity;
+
+	public Integer getCountryID() {
+		return countryID;
+	}
+
+	public void setCountryID(Integer countryID) {
+		this.countryID = countryID;
+	}
+
+	public String getCountryName() {
+		return countryName;
+	}
+
+	public void setCountryName(String countryName) {
+		this.countryName = countryName;
+	}
+
+	public Calendar getCountryLastUpdate() {
+		return countryLastUpdate;
+	}
+
+	public void setCountryLastUpdate(Calendar countryLastUpdate) {
+		this.countryLastUpdate = countryLastUpdate;
+	}
+
+	public List<City> getListCity() {
+		return listCity;
+	}
+
+	public void setListCity(List<City> listCity) {
+		this.listCity = listCity;
+	}
+	
+	
 }

@@ -35,5 +35,47 @@ public class Store {
 	
 	@OneToMany(mappedBy="store")
 	private List<Staff> listStaff;
+
+	public Integer getStoreID() {
+		return storeID;
+	}
+
+	public void setStoreID(Integer storeID) {
+		this.storeID = storeID;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public Staff getStaff() {
+		return staff;
+	}
+
+	public void setStaff(Staff staff) {
+		this.staff = staff;
+	}
+
+	public Calendar getStoreLastUpdate() {
+		return storeLastUpdate;
+	}
+
+	public void setStoreLastUpdate(Calendar storeLastUpdate) {
+		this.storeLastUpdate = storeLastUpdate;
+	}
+
+	public List<Staff> getListStaff() {
+		return listStaff;
+	}
+
+	public void setListStaff(List<Staff> listStaff) {
+		this.listStaff = listStaff;
+	}
+	
+	
 	
 }
